@@ -9,9 +9,9 @@ export interface BriefResult {
 }
 
 const FREE_MODELS = [
-  "deepseek/deepseek-chat-v3-0324:free",
+  "deepseek/deepseek-v4-flash:free",
   "meta-llama/llama-3.3-70b-instruct:free",
-  "google/gemini-2.0-flash-exp:free",
+  "qwen/qwen3-next-80b-a3b-instruct:free",
 ];  
 
 export async function generateMarketBrief(headlines: string[]): Promise<BriefResult> {
