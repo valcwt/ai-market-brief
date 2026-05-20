@@ -8,12 +8,11 @@ export interface BriefResult {
   model: string;
 }
 
-// Free models available on OpenRouter (no credit card needed for these)
 const FREE_MODELS = [
-  "deepseek/deepseek-r1:free",
-  "meta-llama/llama-3.1-8b-instruct:free",
-  "mistralai/mistral-7b-instruct:free",
-];
+  "deepseek/deepseek-chat-v3-0324:free",
+  "meta-llama/llama-3.3-70b-instruct:free",
+  "google/gemini-2.0-flash-exp:free",
+];  
 
 export async function generateMarketBrief(headlines: string[]): Promise<BriefResult> {
   const apiKey = process.env.OPENROUTER_API_KEY;
